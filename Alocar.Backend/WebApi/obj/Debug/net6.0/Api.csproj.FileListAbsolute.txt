@@ -30,3 +30,11 @@ D:\Empresas\Ubersystem\Alocar\Alocar.Backend\WebApi\obj\Debug\net6.0\refint\Api.
 D:\Empresas\Ubersystem\Alocar\Alocar.Backend\WebApi\obj\Debug\net6.0\Api.pdb
 D:\Empresas\Ubersystem\Alocar\Alocar.Backend\WebApi\obj\Debug\net6.0\Api.genruntimeconfig.cache
 D:\Empresas\Ubersystem\Alocar\Alocar.Backend\WebApi\obj\Debug\net6.0\ref\Api.dll
+D:\Empresas\Ubersystem\Alocar\Alocar.Backend\WebApi\bin\Debug\net6.0\Application.dll
+D:\Empresas\Ubersystem\Alocar\Alocar.Backend\WebApi\bin\Debug\net6.0\Domain.dll
+D:\Empresas\Ubersystem\Alocar\Alocar.Backend\WebApi\bin\Debug\net6.0\Infrastructure.Data.dll
+D:\Empresas\Ubersystem\Alocar\Alocar.Backend\WebApi\bin\Debug\net6.0\Infrastructure.IoC.dll
+D:\Empresas\Ubersystem\Alocar\Alocar.Backend\WebApi\bin\Debug\net6.0\Infrastructure.IoC.pdb
+D:\Empresas\Ubersystem\Alocar\Alocar.Backend\WebApi\bin\Debug\net6.0\Application.pdb
+D:\Empresas\Ubersystem\Alocar\Alocar.Backend\WebApi\bin\Debug\net6.0\Domain.pdb
+D:\Empresas\Ubersystem\Alocar\Alocar.Backend\WebApi\bin\Debug\net6.0\Infrastructure.Data.pdb

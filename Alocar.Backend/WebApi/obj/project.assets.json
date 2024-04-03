@@ -88,6 +88,57 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
+      },
+      "Infrastructure.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.Data.dll": {}
+        }
+      },
+      "Infrastructure.IoC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Application": "1.0.0",
+          "Domain": "1.0.0",
+          "Infrastructure.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.IoC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.IoC.dll": {}
+        }
       }
     }
   },
@@ -216,10 +267,31 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Application/1.0.0": {
+      "type": "project",
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "Infrastructure.Data/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure.Data/Infrastructure.Data.csproj",
+      "msbuildProject": "../Infrastructure.Data/Infrastructure.Data.csproj"
+    },
+    "Infrastructure.IoC/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure.IoC/Infrastructure.IoC.csproj",
+      "msbuildProject": "../Infrastructure.IoC/Infrastructure.IoC.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Infrastructure.IoC >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -254,7 +326,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Empresas\\Ubersystem\\Alocar\\Alocar.Backend\\Infrastructure.IoC\\Infrastructure.IoC.csproj": {
+              "projectPath": "D:\\Empresas\\Ubersystem\\Alocar\\Alocar.Backend\\Infrastructure.IoC\\Infrastructure.IoC.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

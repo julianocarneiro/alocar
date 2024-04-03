@@ -1,11 +1,68 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
+      },
+      "Infrastructure.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.Data.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Application/1.0.0": {
+      "type": "project",
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "Infrastructure.Data/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure.Data/Infrastructure.Data.csproj",
+      "msbuildProject": "../Infrastructure.Data/Infrastructure.Data.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Application >= 1.0.0",
+      "Domain >= 1.0.0",
+      "Infrastructure.Data >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Ubersystem\\.nuget\\packages\\": {},
@@ -38,7 +95,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Empresas\\Ubersystem\\Alocar\\Alocar.Backend\\Application\\Application.csproj": {
+              "projectPath": "D:\\Empresas\\Ubersystem\\Alocar\\Alocar.Backend\\Application\\Application.csproj"
+            },
+            "D:\\Empresas\\Ubersystem\\Alocar\\Alocar.Backend\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\Empresas\\Ubersystem\\Alocar\\Alocar.Backend\\Domain\\Domain.csproj"
+            },
+            "D:\\Empresas\\Ubersystem\\Alocar\\Alocar.Backend\\Infrastructure.Data\\Infrastructure.Data.csproj": {
+              "projectPath": "D:\\Empresas\\Ubersystem\\Alocar\\Alocar.Backend\\Infrastructure.Data\\Infrastructure.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

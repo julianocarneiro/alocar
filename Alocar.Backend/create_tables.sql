@@ -1,8 +1,8 @@
 ﻿-- Create Clients table
 CREATE TABLE Clients (
     Id INT PRIMARY KEY,
-    Email VARCHAR(100) NOT NULL,
     Name VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) NOT NULL,
     Document VARCHAR(20),
     Category VARCHAR(50),
     CreatedAt DATETIME DEFAULT GETDATE(),
@@ -14,7 +14,7 @@ CREATE TABLE Vehicles (
     Id INT PRIMARY KEY,
     Name VARCHAR(100) NOT NULL,
     Brand VARCHAR(100),
-    ManufactureModel VARCHAR(100),
+    ManufactureModel VARCHAR(4),
     ManufactureYear VARCHAR(4),
     Color VARCHAR(50),
     Plate VARCHAR(20) NOT NULL,
