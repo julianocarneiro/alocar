@@ -1,0 +1,1 @@
+Projeto de Demostração de uso do C# e como backend e Next como Frontend
