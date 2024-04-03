@@ -4,7 +4,7 @@ CREATE TABLE Clients (
     Name VARCHAR(100) NOT NULL,
     Email VARCHAR(100) NOT NULL,
     Document VARCHAR(20),
-    Category VARCHAR(50),
+    Category VARCHAR(20),
     CreatedAt DATETIME DEFAULT GETDATE(),
     UpdatedAt DATETIME DEFAULT GETDATE()
 );
@@ -16,14 +16,14 @@ CREATE TABLE Vehicles (
     Brand VARCHAR(100),
     ManufactureModel VARCHAR(4),
     ManufactureYear VARCHAR(4),
-    Color VARCHAR(50),
+    Color VARCHAR(30),
     Plate VARCHAR(20) NOT NULL,
     CreatedAt DATETIME DEFAULT GETDATE(),
     UpdatedAt DATETIME DEFAULT GETDATE()
 );
 
 -- Create Allocation table
-CREATE TABLE Allocation (
+CREATE TABLE Allocations (
     Id INT PRIMARY KEY,
     ClientId INT,
     VehicleId INT,

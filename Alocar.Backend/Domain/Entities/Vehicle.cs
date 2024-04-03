@@ -22,6 +22,7 @@ namespace Domain.Entities
         public DateTime CreatedAt { get; private set; }
         public DateTime UpdatedAt { get; private set; }
 
+        public ICollection<Allocation> Allocations { get; set; }
         public Vehicle(int id, string name, string brand, string manufactureModel, 
             string manufactureYear, string color, string plate, 
             DateTime createdAt, DateTime updatedAt)
@@ -75,9 +76,9 @@ namespace Domain.Entities
     Id INT PRIMARY KEY,
     Name VARCHAR(100) NOT NULL,
     Brand VARCHAR(100),
-    ManufactureModel VARCHAR(100),
+    ManufactureModel VARCHAR(4),
     ManufactureYear VARCHAR(4),
-    Color VARCHAR(50),
+    Color VARCHAR(20),
     Plate VARCHAR(20) NOT NULL,
     CreatedAt DATETIME DEFAULT GETDATE(),
     UpdatedAt DATETIME DEFAULT GETDATE()

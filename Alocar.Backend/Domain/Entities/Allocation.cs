@@ -22,6 +22,9 @@ namespace Domain.Entities
         public DateTime CreatedAt { get; private set; }
         public DateTime UpdatedAt { get; private set; }
 
+        public Client Client { get; set; }
+        public Vehicle Vehicle { get; set; }
+
         public Allocation(int id, int clientId, int vehicleId, bool finished, 
             DateTime allocationDate, DateTime returnDate, 
             DateTime createdAt, DateTime updatedAt)

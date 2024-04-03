@@ -19,6 +19,8 @@ namespace Domain.Entities
         public DateTime CreatedAt { get; private set; }
         public DateTime UpdatedAt { get; private set; }
 
+        public ICollection<Allocation> Allocations { get; set; }
+
         public Client(int id, string email, string name, string document, 
             string category, DateTime createdAt, DateTime updatedAt)
         {
@@ -65,7 +67,7 @@ namespace Domain.Entities
     Name VARCHAR(100) NOT NULL,
     Email VARCHAR(100) NOT NULL,
     Document VARCHAR(20),
-    Category VARCHAR(50),
+    Category VARCHAR(20),
     CreatedAt DATETIME DEFAULT GETDATE(),
     UpdatedAt DATETIME DEFAULT GETDATE()
 );
