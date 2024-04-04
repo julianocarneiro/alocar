@@ -10,19 +10,19 @@ namespace Domain.Entities
 {
     public class Vehicle
     {
-        public int Id { get; private set; }
+        public int? Id { get; private set; }
 
-        public string Name { get; private set; }
-        public string Brand { get; private set; }
-        public string ManufactureModel { get; private set; }
-        public string ManufactureYear { get; private set; }
-        public string Color { get; private set; }
-        public string Plate { get; private set; }
+        public string? Name { get; private set; }
+        public string? Brand { get; private set; }
+        public string? ManufactureModel { get; private set; }
+        public string? ManufactureYear { get; private set; }
+        public string? Color { get; private set; }
+        public string? Plate { get; private set; }
 
         public DateTime CreatedAt { get; private set; }
         public DateTime UpdatedAt { get; private set; }
 
-        public ICollection<Allocation> Allocations { get; set; }
+        public ICollection<Allocation>? Allocations { get; set; }
         public Vehicle(int id, string name, string brand, string manufactureModel, 
             string manufactureYear, string color, string plate, 
             DateTime createdAt, DateTime updatedAt)
@@ -51,10 +51,10 @@ namespace Domain.Entities
             DateTime createdAt, DateTime updatedAt)
         {
 
-            DomainExceptionValidation.When(name.Length > 3, "Nome deve ser maior que 3 caracteres");
-            DomainExceptionValidation.When(name.Length <= 100, "Nome não pode ser maior que 100 caracteres");
-            DomainExceptionValidation.When(manufactureModel.Length == 4, "Modelo deve ter 4 caracteres");
-            DomainExceptionValidation.When(manufactureYear.Length == 4, "Ano deve ter 4 caracteres");
+            DomainExceptionValidation.When(name.Length < 3, "Nome deve ser maior que 3 caracteres");
+            DomainExceptionValidation.When(name.Length > 100, "Nome não pode ser maior que 100 caracteres");
+            DomainExceptionValidation.When(manufactureModel.Length != 4, "Modelo deve ter 4 caracteres");
+            DomainExceptionValidation.When(manufactureYear.Length != 4, "Ano deve ter 4 caracteres");
 
             Name = name;
             Brand = brand;

@@ -11,7 +11,7 @@ namespace Domain.Entities
 {
     public class Allocation
     {
-        public int Id { get; private set; }
+        public int? Id { get; private set; }
 
         public int ClientId { get; private set; }
         public int VehicleId { get; private set; }
@@ -22,8 +22,8 @@ namespace Domain.Entities
         public DateTime CreatedAt { get; private set; }
         public DateTime UpdatedAt { get; private set; }
 
-        public Client Client { get; set; }
-        public Vehicle Vehicle { get; set; }
+        public Client? Client { get; set; }
+        public Vehicle? Vehicle { get; set; }
 
         public Allocation(int id, int clientId, int vehicleId, bool finished, 
             DateTime allocationDate, DateTime returnDate, 

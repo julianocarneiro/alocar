@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "es0ZIW0ZzOMuj2y/z3eSbxqxVFsfLn3Eus2WPADc9dfyvH3m46nyMvI1cD/JMg0T42Sp0vZ7KbdJlUMwFRvLxA==",
+  "dgSpecHash": "E6/ZH+OgrQKtPn0O7kzQ3DnqtPpm+aBZG6FdaRJXRbh8Wx5A4O7FUwZgnQRRiS3rExxzw1dj5VSOaOSlvewJbA==",
   "success": true,
   "projectFilePath": "D:\\Empresas\\Ubersystem\\Alocar\\Alocar.Backend\\Application\\Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Ubersystem\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Ubersystem\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\Ubersystem\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Ubersystem\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ubersystem\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ubersystem\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ubersystem\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,4 +1,9 @@
-﻿using Infrastructure.Data.Context;
+﻿using Application.Interfaces;
+using Application.Mappings;
+using Application.Services;
+using Domain.Interfaces;
+using Infrastructure.Data.Context;
+using Infrastructure.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,6 +25,14 @@ namespace Infrastructure.IoC
                 opt.UseSqlServer(configuration.GetConnectionString("DefaultConnectionLocal"), 
                     b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName));
             });
+
+            services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
+
+            // Repositories
+            services.AddScoped<IClientRepository, ClientRepository>();
+
+            // Services
+            services.AddScoped<IClientService, ClientService>();
 
             return services;
         }
