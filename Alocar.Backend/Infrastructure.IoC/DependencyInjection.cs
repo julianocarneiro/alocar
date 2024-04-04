@@ -30,9 +30,13 @@ namespace Infrastructure.IoC
 
             // Repositories
             services.AddScoped<IClientRepository, ClientRepository>();
+            services.AddScoped<IVehicleRepository, VehicleRepository>();
+            services.AddScoped<IAllocationRepository, AllocationRepository>();
 
             // Services
             services.AddScoped<IClientService, ClientService>();
+            services.AddScoped<IVehicleService, VehicleService>();
+            services.AddScoped<IAllocationService, AllocationService>();
 
             return services;
         }
