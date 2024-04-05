@@ -32,7 +32,7 @@ namespace Api.Controllers
             var allocationDTO = await _allocationService.GetById(Id);
             if (allocationDTO == null)
             {
-                return BadRequest("allocatione não encontrado.");
+                return BadRequest("Locação não encontrado.");
             }
             return Ok(allocationDTO);
 
@@ -44,9 +44,9 @@ namespace Api.Controllers
             var allocationCreated = await _allocationService.Create(allocationDTO);
             if (allocationCreated == null)
             {
-                return BadRequest("Ocorreu um erro ao criar o allocatione.");
+                return BadRequest("Ocorreu um erro ao criar o Locação.");
             }
-            return Ok("allocatione criado com sucesso!");
+            return Ok("Locação criado com sucesso!");
 
         }
 
@@ -56,9 +56,9 @@ namespace Api.Controllers
             var allocationUpdated = await _allocationService.Update(allocationDTO);
             if (allocationUpdated == null)
             {
-                return BadRequest("Ocorreu um erro ao atualizar o allocatione.");
+                return BadRequest("Ocorreu um erro ao atualizar o Locação.");
             }
-            return Ok("allocatione atualizado com sucesso!");
+            return Ok("Locação atualizado com sucesso!");
         }
 
         [HttpDelete]
@@ -68,9 +68,9 @@ namespace Api.Controllers
             var allocationDeleted = await _allocationService.Delete(Id);
             if (allocationDeleted == null)
             {
-                return BadRequest("Ocorreu um erro ao deletar o allocatione.");
+                return BadRequest("Ocorreu um erro ao deletar o Locação.");
             }
-            return Ok("allocatione deletado com sucesso!");
+            return Ok("Locação deletado com sucesso!");
         }
     }
 }
