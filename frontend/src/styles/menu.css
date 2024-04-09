@@ -1,0 +1,147 @@
+.menu {
+    width: 56px;
+    height: 100vh;
+    align-items: center;
+    border: var(--espaamento-tabelas, 1px) solid
+      var(--cards-e-tabela-borda-tabela-cinza-2-borda-preto-3, #ebedee);
+    background-color: #fff;
+    display: flex;
+    padding: 8px 12px;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .menu:hover {
+    width: 265px;
+    align-items: flex-start;
+  }
+  
+  .menu:hover .botaoMenu {
+    display: none;
+  }
+  
+  .menu:hover .meuPerfil,
+  .menu:hover .menuTexto {
+    display: flex;
+  }
+  
+  .menuItem,
+  .menuItemBullet {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .menuItemBullet:hover {
+    background-color: #F8F8F8;
+    display: flex;
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    align-items: center;
+  }
+  
+  .menuIcon,
+  .botaoMenu,
+  .meuPerfil,
+  .menuTexto {
+    display: flex;
+    height: 48px;
+    align-items: center;
+  }
+  
+  .meuPerfil:hover {
+    background-color: #F8F8F8;
+    display: flex;
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    align-items: center;
+  }
+  
+  
+  .menuIcon {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .bullet {
+    width: 21px;
+    height: 15px;
+    position: absolute;
+    color: var(--Branco, #fff);
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 11px;
+    border-radius: 200px;
+    background-color: var(--cor-primarias-laranja, #ff8040);
+    top: 0;
+    right: -5px;
+  }
+  
+  .meuPerfil,
+  .menuTexto {
+    display: none;
+  }
+  
+  .menuTexto {
+    width: 197px;
+    color: var(--status-preto-100-obsoleto, #000);
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    margin-left: 12px;
+    height: 32px;
+  }
+  
+  .menu:not(:hover) .submenu {
+    display: none !important;
+  }
+  
+  .submenu {
+    width: 197px;
+    align-items: flex-start;
+    align-self: end;
+    border-radius: var(--espaamento-tabelas, 0px);
+    margin-top: 16px;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    margin-left: 12px;
+    cursor: default;
+  }
+  
+  .submenu li {
+    margin: 24px 0;
+  }
+  
+  .submenu a {
+    color: var(--status-preto-100-vlido, #000);
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+  }
+  
+  .submenu a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 576px) {
+    .menu {
+      display: none;
+    }
+  
+    .menuTexto {
+      display: flex;
+    }
+  }
+  

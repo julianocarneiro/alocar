@@ -1,0 +1,26 @@
+.fixHeader {
+    z-index: 991;
+    top: 0;
+    width: calc(100vw - 56px);
+    position: fixed;
+}
+
+.header {
+    height: 56px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    row-gap: var(--Margem-lateral-esquerda, 80px);
+    flex-wrap: wrap;
+    border-bottom: var(--espaamento-tabelas, 1px) solid var(--cards-e-tabela-borda-tabela-cinza-2-borda-preto-3, #EBEDEE);
+    background-color: var(--cor-primarias-branco, #fff);
+    display: flex;
+    padding: 0 20px;
+    flex-direction: row;
+}
+
+
+.borderBotton {
+    box-shadow: none;
+    border-bottom: 1px solid var(--cinza-2-bordas-tabelas, #ebedee);
+}
